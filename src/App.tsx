@@ -1,16 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Counter from "./pages/counter.exemple";
-import Test from "./pages/routerTest";
-import Navbar from "./components/navbar";
+
+import Landing from "./pages/landing";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Counter />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/destinations" element={<Landing />} />
+        <Route path="/packages" element={<Landing />} />
+        <Route path="/profile" element={<Landing />} />
+        <Route path="/contact" element={<Landing />} />
       </Routes>
     </>
   );
