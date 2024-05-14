@@ -17,11 +17,7 @@ function Navbar() {
   const navigate = useNavigate();
   return (
     <div className="text-lg md:text-xl font-normal text-yellow-50 fixed flex items-center justify-between w-available mx-4 my-5 px-5 py-3 bg-slate-50/30 backdrop-blur-sm rounded-md">
-      <img
-        src="../src/assets/TM_logo 400 x 97px-01.png"
-        alt=""
-        className="h-8 md:h-10"
-      />
+      <img src="../src/assets/logo.png" alt="" className="h-8 md:h-10" />
       <div className="flex items-center gap-4">
         {navLinks.map((ele, i) => (
           <span
